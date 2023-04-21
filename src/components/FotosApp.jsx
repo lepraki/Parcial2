@@ -11,8 +11,8 @@ export const FotosApp = () => {
 
 	const onInput = () => {
 		dispatch(getFotos(0));
-		setFotosList(pokemons.pokemons);
-		console.log(pokemons.pokemons);
+		setFotosList(Fotos.Fotos);
+		console.log(Fotos.Fotos);
 	};
 
 	return (
@@ -20,7 +20,7 @@ export const FotosApp = () => {
 			<div>Fotos</div>
 			<button onClick={() => onInput()}>aja</button>
 			<tbody>
-				{FotosList.map((pokemon, index) => (
+				{FotosList.map((Fotos, index) => (
 					<tr key={index}>
 						<td>{FotosList[index].name}</td>
                         <td>{FotosList[index].url}</td>
